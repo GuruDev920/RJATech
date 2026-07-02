@@ -1,7 +1,6 @@
-# rjatechllc.com
+# RJA Tech LLC
 
-One-page website for `rjatechllc.com`, built with
-[vinext](https://github.com/cloudflare/vinext).
+One-page website for `rjatechllc.com`, built for RJA Tech LLC with Next.js.
 
 ## Prerequisites
 
@@ -28,5 +27,5 @@ npm run build
 ## Useful Commands
 
 - `npm run dev`: start local development
-- `npm run build`: verify the vinext build output
+- `npm run build`: verify the Next.js build output
 - `npm run db:generate`: generate Drizzle migrations after schema changes

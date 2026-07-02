@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Your Brand | Modern One-Page Website",
+  title: "RJA Tech LLC | Technology Services",
   description:
-    "A polished, responsive one-page website ready for your custom domain.",
+    "Modern technology support and digital services from RJA Tech LLC.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",

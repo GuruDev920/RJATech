@@ -1,8 +1,8 @@
 const services = [
-  "Modern one-page website",
-  "Clear messaging",
-  "Mobile-first layout",
-  "Launch-ready structure",
+  "Technology support",
+  "Digital solutions",
+  "Business systems",
+  "Reliable communication",
 ];
 
 const stats = [
@@ -31,7 +31,7 @@ export default function Home() {
     <main className="min-h-screen bg-[#f8f7f2] text-[#151515]">
       <nav className="mx-auto flex w-full max-w-7xl items-center justify-between px-5 py-5 sm:px-8">
         <a className="text-base font-semibold tracking-wide" href="#">
-          Your Brand
+          RJA Tech LLC
         </a>
         <div className="hidden items-center gap-7 text-sm text-[#55534d] sm:flex">
           <a className="transition hover:text-[#151515]" href="#services">
@@ -46,7 +46,7 @@ export default function Home() {
         </div>
         <a
           className="inline-flex h-10 items-center justify-center rounded-full bg-[#151515] px-4 text-sm font-medium text-white transition hover:bg-[#2f5f5a]"
-          href="mailto:hello@example.com"
+          href="mailto:support@rjatechllc.com"
         >
           Get in touch
         </a>
@@ -55,15 +55,15 @@ export default function Home() {
       <section className="mx-auto grid min-h-[calc(100vh-80px)] w-full max-w-7xl items-center gap-12 px-5 pb-14 pt-6 sm:px-8 lg:grid-cols-[0.92fr_1.08fr] lg:pb-20">
         <div className="max-w-2xl">
           <p className="mb-5 inline-flex rounded-full border border-[#d9d4c7] bg-white/70 px-4 py-2 text-sm font-medium text-[#2f5f5a]">
-            Modern website for your Namecheap domain
+            Technology services for modern businesses
           </p>
           <h1 className="text-5xl font-semibold leading-[1.02] sm:text-6xl lg:text-7xl">
-            A sharp one-page site for a brand ready to be seen.
+            Practical technology support from RJA Tech LLC.
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-8 text-[#55534d]">
-            Replace this copy with your business name, offer, and contact
-            details. The structure is built for a polished first impression:
-            headline, proof, services, process, and a clear next step.
+            We help businesses move with confidence through dependable digital
+            support, clear communication, and solutions shaped around the work
+            that matters most.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <a
@@ -109,10 +109,10 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.8fr_1.2fr]">
           <div>
             <p className="text-sm font-semibold uppercase tracking-wide text-[#d5674b]">
-              What this page includes
+              What we support
             </p>
             <h2 className="mt-3 text-3xl font-semibold sm:text-4xl">
-              Everything a visitor needs in one confident scroll.
+              Focused help for the systems and details that keep work moving.
             </h2>
           </div>
           <div className="grid gap-3 sm:grid-cols-2">
@@ -123,8 +123,8 @@ export default function Home() {
               >
                 <p className="text-lg font-semibold">{service}</p>
                 <p className="mt-3 text-sm leading-6 text-[#55534d]">
-                  Designed to be edited quickly once your final business details
-                  are ready.
+                  Reach out with your needs and we will help identify the
+                  right next step.
                 </p>
               </div>
             ))}
@@ -135,10 +135,10 @@ export default function Home() {
       <section className="mx-auto max-w-7xl px-5 py-16 sm:px-8" id="process">
         <div className="mb-10 max-w-2xl">
           <p className="text-sm font-semibold uppercase tracking-wide text-[#d5674b]">
-            Simple structure
+            How we work
           </p>
           <h2 className="mt-3 text-3xl font-semibold sm:text-4xl">
-            Built to make the first impression do real work.
+            Clear, steady support from first message to finished result.
           </h2>
         </div>
         <div className="grid gap-4 md:grid-cols-3">
@@ -160,17 +160,17 @@ export default function Home() {
         <div className="mx-auto flex max-w-7xl flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
           <div className="max-w-2xl">
             <p className="text-sm font-semibold uppercase tracking-wide text-[#f0a08c]">
-              Ready for your domain
+              Contact RJA Tech LLC
             </p>
             <h2 className="mt-3 text-3xl font-semibold sm:text-5xl">
-              Point your Namecheap domain here when you are ready to publish.
+              Tell us what you need help with and we will get back to you.
             </h2>
           </div>
           <a
             className="inline-flex h-12 w-fit items-center justify-center rounded-full bg-white px-6 text-sm font-semibold text-[#151515] transition hover:bg-[#f0a08c]"
-            href="mailto:hello@example.com"
+            href="mailto:support@rjatechllc.com"
           >
-            hello@example.com
+            support@rjatechllc.com
           </a>
         </div>
       </section>
