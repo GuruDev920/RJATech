@@ -1,7 +1,6 @@
-<svg width="320" height="96" viewBox="0 0 320 96" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+<svg width="340" height="96" viewBox="0 0 340 96" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">RJA Tech LLC logo</title>
-  <desc id="desc">A professional RJA Tech LLC wordmark with a geometric monogram and technology circuit accents.</desc>
-  <rect width="320" height="96" rx="18" fill="#151515"/>
+  <desc id="desc">A professional transparent RJA Tech LLC wordmark with a geometric monogram and technology circuit accents.</desc>
   <g transform="translate(18 18)">
     <rect x="0.75" y="0.75" width="58.5" height="58.5" rx="13.25" fill="#F8F7F2" stroke="#E2DDCF" stroke-width="1.5"/>
     <path d="M15 45V15h16.8c7.4 0 12.2 4.1 12.2 10.5 0 4.8-2.6 8.2-7.1 9.7L45 45h-9.5l-7.1-8.8H23V45h-8Zm8-15.8h8c3.1 0 5-1.4 5-3.8 0-2.3-1.9-3.7-5-3.7h-8v7.5Z" fill="#151515"/>
@@ -11,8 +10,8 @@
     <circle cx="9" cy="51" r="3.5" fill="#2F5F5A"/>
   </g>
   <g transform="translate(92 27)">
-    <text x="0" y="26" fill="#F8F7F2" font-family="Inter, Arial, Helvetica, sans-serif" font-size="30" font-weight="750" letter-spacing="0">RJA Tech</text>
-    <text x="2" y="48" fill="#D9D4C7" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="600" letter-spacing="2.6">LLC</text>
+    <text x="0" y="26" fill="#151515" font-family="Inter, Arial, Helvetica, sans-serif" font-size="32" font-weight="750" letter-spacing="0">RJA Tech</text>
+    <text x="2" y="50" fill="#55534D" font-family="Inter, Arial, Helvetica, sans-serif" font-size="14" font-weight="650" letter-spacing="2.8">LLC</text>
     <path d="M72 44h48c6 0 10-4 10-10v-4" stroke="#2F5F5A" stroke-width="2.5" stroke-linecap="round"/>
     <circle cx="132" cy="27" r="3" fill="#D5674B"/>
   </g>

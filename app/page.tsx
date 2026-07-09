@@ -37,7 +37,7 @@ export default function Home() {
         >
           <img
             alt=""
-            className="h-11 w-auto"
+            className="h-14 w-auto sm:h-16"
             src="/images/rja-tech-logo.svg"
           />
         </a>
