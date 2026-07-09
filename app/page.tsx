@@ -88,7 +88,7 @@ const platforms = [
           x="5.1"
           y="14.4"
         >
-          S
+          SAMSUNG
         </text>
       </svg>
     ),
@@ -127,7 +127,7 @@ const platforms = [
           x="5"
           y="14.5"
         >
-          R
+          ROKU
         </text>
       </svg>
     ),
