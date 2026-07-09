@@ -68,7 +68,7 @@ export default function Home() {
         </div>
         <a
           className="inline-flex h-10 items-center justify-center rounded-full bg-[#151515] px-4 text-sm font-medium text-white transition hover:bg-[#2f5f5a]"
-          href="mailto:support@rjatechllc.com?subject=App%20Project%20Inquiry"
+          href="#contact"
         >
           Get in touch
         </a>
