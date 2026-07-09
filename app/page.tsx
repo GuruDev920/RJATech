@@ -1,19 +1,19 @@
 const services = [
   {
     title: "Mobile apps",
-    body: "Android and Apple app experiences built for smooth onboarding, playback, account access, and day-to-day user engagement.",
+    body: "Android and Apple app experiences built for smooth onboarding, account access, navigation, and day-to-day user engagement.",
   },
   {
     title: "Smart TV apps",
     body: "Lean-back TV apps for Samsung, LG, Roku, and connected screens where remote-first navigation needs to feel effortless.",
   },
   {
-    title: "Streaming platforms",
-    body: "Video-focused experiences shaped around content discovery, subscription flows, live channels, and reliable viewing.",
+    title: "Custom app interfaces",
+    body: "Polished user interfaces shaped around your product, brand, workflows, and the platform rules each device expects.",
   },
   {
     title: "Cross-platform delivery",
-    body: "Coordinated app releases across phones, tablets, TVs, streaming devices, and Windows environments.",
+    body: "Coordinated app releases across phones, tablets, Smart TVs, Roku devices, and Windows environments.",
   },
 ];
 
@@ -83,8 +83,8 @@ export default function Home() {
             Apps for the screens your users already watch.
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-8 text-[#55534d]">
-            RJA Tech LLC provides mobile, Smart TV, and streaming app solutions
-            for Android, Apple, Samsung, LG, Roku, and Windows users.
+            RJA Tech LLC provides mobile and Smart TV app development for
+            Android, Apple, Samsung, LG, Roku, and Windows users.
           </p>
           <div className="mt-6 flex max-w-xl flex-wrap gap-2">
             {platforms.map((platform) => (
