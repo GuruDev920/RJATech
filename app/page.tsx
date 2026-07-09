@@ -77,16 +77,19 @@ const platforms = [
   },
   {
     name: "Samsung",
+    iconClassName: "h-4 w-12",
     icon: (
-      <svg aria-hidden="true" viewBox="0 0 24 24">
-        <ellipse cx="12" cy="12" fill="currentColor" rx="10" ry="6.4" />
+      <svg aria-hidden="true" viewBox="0 0 72 24">
+        <ellipse cx="36" cy="12" fill="#1428A0" rx="34" ry="10" />
         <text
-          fill="#f8f7f2"
-          fontFamily="Arial, Helvetica, sans-serif"
-          fontSize="7"
-          fontWeight="700"
-          x="5.1"
-          y="14.4"
+          fill="#ffffff"
+          fontFamily="Arial Narrow, Arial, Helvetica, sans-serif"
+          fontSize="11"
+          fontStretch="condensed"
+          fontWeight="800"
+          letterSpacing=".8"
+          x="9"
+          y="15.8"
         >
           SAMSUNG
         </text>
@@ -116,18 +119,20 @@ const platforms = [
   },
   {
     name: "Roku",
+    iconClassName: "h-4 w-10",
     icon: (
-      <svg aria-hidden="true" viewBox="0 0 24 24">
-        <rect fill="currentColor" height="14" rx="3" width="20" x="2" y="5" />
+      <svg aria-hidden="true" viewBox="0 0 60 24">
+        <rect fill="#6f1ab1" height="18" rx="4" width="56" x="2" y="3" />
         <text
-          fill="#f8f7f2"
+          fill="#ffffff"
           fontFamily="Arial, Helvetica, sans-serif"
-          fontSize="7"
-          fontWeight="700"
-          x="5"
-          y="14.5"
+          fontSize="13"
+          fontWeight="900"
+          letterSpacing=".4"
+          x="10"
+          y="16.5"
         >
-          ROKU
+          Roku
         </text>
       </svg>
     ),
@@ -194,7 +199,9 @@ export default function Home() {
                 className="inline-flex items-center gap-1.5 rounded-full border border-[#d9d4c7] bg-white/75 px-3 py-1.5 text-sm font-semibold text-[#2f5f5a]"
                 key={platform.name}
               >
-                <span className="h-4 w-4 shrink-0">{platform.icon}</span>
+                <span className={`${platform.iconClassName ?? "h-4 w-4"} shrink-0`}>
+                  {platform.icon}
+                </span>
                 {platform.name}
               </span>
             ))}
