@@ -30,8 +30,16 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#f8f7f2] text-[#151515]">
       <nav className="mx-auto flex w-full max-w-7xl items-center justify-between px-5 py-5 sm:px-8">
-        <a className="text-base font-semibold tracking-wide" href="#">
-          RJA Tech LLC
+        <a
+          className="inline-flex items-center gap-3"
+          href="#"
+          aria-label="RJA Tech LLC home"
+        >
+          <img
+            alt=""
+            className="h-11 w-auto"
+            src="/images/rja-tech-logo.svg"
+          />
         </a>
         <div className="hidden items-center gap-7 text-sm text-[#55534d] sm:flex">
           <a className="transition hover:text-[#151515]" href="#services">
