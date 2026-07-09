@@ -304,7 +304,9 @@ export default function Home() {
             </p>
             <a
               className="mt-8 inline-flex h-12 w-fit items-center justify-center rounded-full bg-white px-6 text-sm font-semibold text-[#151515] transition hover:bg-[#f0a08c]"
-              href="mailto:support@rjatechllc.com?subject=App%20Project%20Inquiry"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=support@rjatechllc.com&su=App%20Project%20Inquiry"
+              rel="noopener noreferrer"
+              target="_blank"
             >
               support@rjatechllc.com
             </a>
