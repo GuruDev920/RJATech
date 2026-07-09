@@ -1,30 +1,44 @@
 const services = [
-  "Technology support",
-  "Digital solutions",
-  "Business systems",
-  "Reliable communication",
+  {
+    title: "Mobile apps",
+    body: "Android and Apple app experiences built for smooth onboarding, playback, account access, and day-to-day user engagement.",
+  },
+  {
+    title: "Smart TV apps",
+    body: "Lean-back TV apps for Samsung, LG, Roku, and connected screens where remote-first navigation needs to feel effortless.",
+  },
+  {
+    title: "Streaming platforms",
+    body: "Video-focused experiences shaped around content discovery, subscription flows, live channels, and reliable viewing.",
+  },
+  {
+    title: "Cross-platform delivery",
+    body: "Coordinated app releases across phones, tablets, TVs, streaming devices, and Windows environments.",
+  },
 ];
 
 const stats = [
-  { value: "01", label: "focused page" },
-  { value: "24h", label: "easy content swap" },
-  { value: "100%", label: "responsive design" },
+  { value: "6+", label: "platform families" },
+  { value: "TV", label: "remote-first UX" },
+  { value: "App", label: "store-ready builds" },
 ];
 
 const steps = [
   {
-    title: "Tell the story",
-    body: "A strong opening section explains who you are, what you offer, and why visitors should care.",
+    title: "Plan the product",
+    body: "We map the user journey, platform requirements, content flows, and release priorities before development begins.",
   },
   {
-    title: "Build trust",
-    body: "Proof points, service highlights, and a polished visual system make the page feel credible fast.",
+    title: "Build for each screen",
+    body: "Interfaces are designed for touch, remote controls, large screens, and device-specific expectations across every platform.",
   },
   {
-    title: "Convert visitors",
-    body: "Clear calls to action guide people toward booking, calling, buying, or sending a message.",
+    title: "Launch and improve",
+    body: "We support submission, rollout, fixes, and product improvements so your apps keep working for real users.",
   },
 ];
+
+const platforms = ["Android", "Apple", "Samsung", "LG", "Roku", "Windows"];
 
 export default function Home() {
   return (
@@ -63,22 +77,31 @@ export default function Home() {
       <section className="mx-auto grid min-h-[calc(100vh-80px)] w-full max-w-7xl items-center gap-12 px-5 pb-14 pt-6 sm:px-8 lg:grid-cols-[0.92fr_1.08fr] lg:pb-20">
         <div className="max-w-2xl">
           <p className="mb-5 inline-flex rounded-full border border-[#d9d4c7] bg-white/70 px-4 py-2 text-sm font-medium text-[#2f5f5a]">
-            Technology services for modern businesses
+            Mobile and Smart TV app development
           </p>
           <h1 className="text-5xl font-semibold leading-[1.02] sm:text-6xl lg:text-7xl">
-            Practical technology support from RJA Tech LLC.
+            Apps for the screens your users already watch.
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-8 text-[#55534d]">
-            We help businesses move with confidence through dependable digital
-            support, clear communication, and solutions shaped around the work
-            that matters most.
+            RJA Tech LLC provides mobile, Smart TV, and streaming app solutions
+            for Android, Apple, Samsung, LG, Roku, and Windows users.
           </p>
+          <div className="mt-6 flex max-w-xl flex-wrap gap-2">
+            {platforms.map((platform) => (
+              <span
+                className="rounded-full border border-[#d9d4c7] bg-white/75 px-3 py-1.5 text-sm font-semibold text-[#2f5f5a]"
+                key={platform}
+              >
+                {platform}
+              </span>
+            ))}
+          </div>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <a
               className="inline-flex h-12 items-center justify-center rounded-full bg-[#2f5f5a] px-6 text-sm font-semibold text-white transition hover:bg-[#244b47]"
               href="#contact"
             >
-              Start a conversation
+              Discuss your app
             </a>
             <a
               className="inline-flex h-12 items-center justify-center rounded-full border border-[#cfc8b8] px-6 text-sm font-semibold text-[#151515] transition hover:border-[#151515]"
@@ -91,9 +114,9 @@ export default function Home() {
 
         <div className="relative">
           <img
-            alt="Modern workspace with a laptop and refined desk objects"
+            alt="Mobile and Smart TV app interface preview across multiple devices"
             className="aspect-[16/10] w-full rounded-[1.75rem] object-cover shadow-[0_30px_80px_rgba(38,47,43,0.20)]"
-            src="/images/hero-workspace.png"
+            src="/images/app-platforms-hero.svg"
           />
           <div className="absolute bottom-4 left-4 right-4 grid gap-3 rounded-2xl border border-white/45 bg-white/82 p-4 shadow-2xl backdrop-blur md:left-6 md:right-6 md:grid-cols-3">
             {stats.map((item) => (
@@ -117,22 +140,21 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.8fr_1.2fr]">
           <div>
             <p className="text-sm font-semibold uppercase tracking-wide text-[#d5674b]">
-              What we support
+              What we build
             </p>
             <h2 className="mt-3 text-3xl font-semibold sm:text-4xl">
-              Focused help for the systems and details that keep work moving.
+              Apps made for mobile users, living rooms, and connected devices.
             </h2>
           </div>
           <div className="grid gap-3 sm:grid-cols-2">
             {services.map((service) => (
               <div
                 className="rounded-lg border border-[#e2ddcf] bg-[#fbfaf6] p-5"
-                key={service}
+                key={service.title}
               >
-                <p className="text-lg font-semibold">{service}</p>
+                <p className="text-lg font-semibold">{service.title}</p>
                 <p className="mt-3 text-sm leading-6 text-[#55534d]">
-                  Reach out with your needs and we will help identify the
-                  right next step.
+                  {service.body}
                 </p>
               </div>
             ))}
@@ -146,7 +168,7 @@ export default function Home() {
             How we work
           </p>
           <h2 className="mt-3 text-3xl font-semibold sm:text-4xl">
-            Clear, steady support from first message to finished result.
+            From first idea to app store release and ongoing support.
           </h2>
         </div>
         <div className="grid gap-4 md:grid-cols-3">
@@ -171,7 +193,7 @@ export default function Home() {
               Contact RJA Tech LLC
             </p>
             <h2 className="mt-3 text-3xl font-semibold sm:text-5xl">
-              Tell us what you need help with and we will get back to you.
+              Tell us which platforms you want to launch on.
             </h2>
           </div>
           <a

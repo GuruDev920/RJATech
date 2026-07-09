@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "RJA Tech LLC | Technology Services",
+  title: "RJA Tech LLC | Mobile & Smart TV Apps",
   description:
-    "Modern technology support and digital services from RJA Tech LLC.",
+    "Mobile, Smart TV, and streaming app solutions for Android, Apple, Samsung, LG, Roku, and Windows.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",

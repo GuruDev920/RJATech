@@ -1,0 +1,39 @@
+<svg width="1200" height="750" viewBox="0 0 1200 750" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Mobile and Smart TV app platforms</title>
+  <desc id="desc">A polished app platform visual showing TV, mobile, tablet, and desktop interfaces for streaming applications.</desc>
+  <rect width="1200" height="750" fill="#F8F7F2"/>
+  <rect x="78" y="72" width="1044" height="606" rx="34" fill="#151515"/>
+  <rect x="118" y="112" width="964" height="526" rx="22" fill="#FBFAF6"/>
+  <rect x="164" y="158" width="620" height="350" rx="18" fill="#151515"/>
+  <rect x="190" y="184" width="568" height="298" rx="12" fill="#234B47"/>
+  <path d="M190 392C306 319 414 315 514 381C612 445 690 425 758 357V482H190V392Z" fill="#2F5F5A"/>
+  <circle cx="674" cy="252" r="58" fill="#D5674B"/>
+  <rect x="222" y="216" width="216" height="24" rx="12" fill="#F8F7F2"/>
+  <rect x="222" y="258" width="136" height="16" rx="8" fill="#D9D4C7"/>
+  <rect x="222" y="302" width="92" height="36" rx="18" fill="#F8F7F2"/>
+  <rect x="382" y="534" width="184" height="16" rx="8" fill="#151515"/>
+  <rect x="444" y="506" width="60" height="40" rx="4" fill="#151515"/>
+  <rect x="804" y="170" width="164" height="330" rx="30" fill="#151515"/>
+  <rect x="821" y="208" width="130" height="252" rx="18" fill="#F8F7F2"/>
+  <rect x="842" y="231" width="88" height="18" rx="9" fill="#2F5F5A"/>
+  <rect x="842" y="270" width="86" height="116" rx="12" fill="#D5674B"/>
+  <rect x="842" y="404" width="88" height="12" rx="6" fill="#55534D"/>
+  <rect x="842" y="428" width="58" height="12" rx="6" fill="#D9D4C7"/>
+  <circle cx="886" cy="478" r="8" fill="#F8F7F2"/>
+  <rect x="722" y="470" width="230" height="130" rx="22" fill="#E2DDCF"/>
+  <rect x="744" y="493" width="186" height="84" rx="14" fill="#151515"/>
+  <rect x="766" y="516" width="104" height="14" rx="7" fill="#F8F7F2"/>
+  <rect x="766" y="543" width="70" height="10" rx="5" fill="#D5674B"/>
+  <rect x="174" y="548" width="154" height="54" rx="27" fill="#F8F7F2" stroke="#E2DDCF" stroke-width="2"/>
+  <text x="203" y="582" fill="#151515" font-family="Inter, Arial, Helvetica, sans-serif" font-size="20" font-weight="700">Android</text>
+  <rect x="350" y="548" width="128" height="54" rx="27" fill="#F8F7F2" stroke="#E2DDCF" stroke-width="2"/>
+  <text x="388" y="582" fill="#151515" font-family="Inter, Arial, Helvetica, sans-serif" font-size="20" font-weight="700">Apple</text>
+  <rect x="500" y="548" width="156" height="54" rx="27" fill="#F8F7F2" stroke="#E2DDCF" stroke-width="2"/>
+  <text x="527" y="582" fill="#151515" font-family="Inter, Arial, Helvetica, sans-serif" font-size="20" font-weight="700">Samsung</text>
+  <rect x="174" y="618" width="96" height="42" rx="21" fill="#2F5F5A"/>
+  <text x="205" y="645" fill="#FFFFFF" font-family="Inter, Arial, Helvetica, sans-serif" font-size="17" font-weight="700">LG</text>
+  <rect x="286" y="618" width="112" height="42" rx="21" fill="#2F5F5A"/>
+  <text x="316" y="645" fill="#FFFFFF" font-family="Inter, Arial, Helvetica, sans-serif" font-size="17" font-weight="700">Roku</text>
+  <rect x="414" y="618" width="142" height="42" rx="21" fill="#2F5F5A"/>
+  <text x="445" y="645" fill="#FFFFFF" font-family="Inter, Arial, Helvetica, sans-serif" font-size="17" font-weight="700">Windows</text>
+</svg>
