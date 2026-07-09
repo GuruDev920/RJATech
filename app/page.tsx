@@ -272,6 +272,9 @@ export default function Home() {
           </form>
         </div>
       </section>
+      <footer className="bg-[#151515] px-5 py-6 text-center text-sm font-medium text-white/70 sm:px-8">
+        © 2026 RJA Tech LLC - All rights reserved
+      </footer>
     </main>
   );
 }
