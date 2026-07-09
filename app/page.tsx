@@ -68,7 +68,7 @@ export default function Home() {
         </div>
         <a
           className="inline-flex h-10 items-center justify-center rounded-full bg-[#151515] px-4 text-sm font-medium text-white transition hover:bg-[#2f5f5a]"
-          href="mailto:support@rjatechllc.com"
+          href="mailto:support@rjatechllc.com?subject=App%20Project%20Inquiry"
         >
           Get in touch
         </a>
@@ -201,13 +201,13 @@ export default function Home() {
             </p>
             <a
               className="mt-8 inline-flex h-12 w-fit items-center justify-center rounded-full bg-white px-6 text-sm font-semibold text-[#151515] transition hover:bg-[#f0a08c]"
-              href="mailto:support@rjatechllc.com"
+              href="mailto:support@rjatechllc.com?subject=App%20Project%20Inquiry"
             >
               support@rjatechllc.com
             </a>
           </div>
           <form
-            action="mailto:support@rjatechllc.com"
+            action="mailto:support@rjatechllc.com?subject=App%20Project%20Inquiry"
             className="grid gap-4 rounded-lg border border-white/12 bg-white p-5 text-[#151515] shadow-[0_24px_70px_rgba(0,0,0,0.28)] sm:grid-cols-2 sm:p-6"
             encType="text/plain"
             method="post"
@@ -232,15 +232,6 @@ export default function Home() {
                 type="text"
               />
             </label>
-            <label className="grid gap-2 text-sm font-semibold" htmlFor="phone">
-              Phone Number
-              <input
-                className="h-12 rounded-lg border border-[#d9d4c7] bg-[#fbfaf6] px-4 text-base font-medium outline-none transition focus:border-[#2f5f5a] focus:bg-white"
-                id="phone"
-                name="Phone Number"
-                type="tel"
-              />
-            </label>
             <label className="grid gap-2 text-sm font-semibold" htmlFor="email">
               Email
               <input
@@ -249,6 +240,15 @@ export default function Home() {
                 name="Email"
                 required
                 type="email"
+              />
+            </label>
+            <label className="grid gap-2 text-sm font-semibold" htmlFor="phone">
+              Phone Number
+              <input
+                className="h-12 rounded-lg border border-[#d9d4c7] bg-[#fbfaf6] px-4 text-base font-medium outline-none transition focus:border-[#2f5f5a] focus:bg-white"
+                id="phone"
+                name="Phone Number"
+                type="tel"
               />
             </label>
             <label
