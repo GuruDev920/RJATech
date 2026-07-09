@@ -1,3 +1,4 @@
+import { ContactForm } from "./ContactForm";
 import { FooterYear } from "./FooterYear";
 
 const services = [
@@ -324,70 +325,7 @@ export default function Home() {
               support@rjatechllc.com
             </a>
           </div>
-          <form
-            action="mailto:support@rjatechllc.com?subject=App%20Project%20Inquiry"
-            className="grid gap-4 rounded-lg border border-white/12 bg-white p-5 text-[#151515] shadow-[0_24px_70px_rgba(0,0,0,0.28)] sm:grid-cols-2 sm:p-6"
-            encType="text/plain"
-            method="post"
-          >
-            <label className="grid gap-2 text-sm font-semibold" htmlFor="first-name">
-              First Name
-              <input
-                className="h-12 rounded-lg border border-[#d9d4c7] bg-[#fbfaf6] px-4 text-base font-medium outline-none transition focus:border-[#2f5f5a] focus:bg-white"
-                id="first-name"
-                name="First Name"
-                required
-                type="text"
-              />
-            </label>
-            <label className="grid gap-2 text-sm font-semibold" htmlFor="last-name">
-              Last Name
-              <input
-                className="h-12 rounded-lg border border-[#d9d4c7] bg-[#fbfaf6] px-4 text-base font-medium outline-none transition focus:border-[#2f5f5a] focus:bg-white"
-                id="last-name"
-                name="Last Name"
-                required
-                type="text"
-              />
-            </label>
-            <label className="grid gap-2 text-sm font-semibold" htmlFor="email">
-              Email
-              <input
-                className="h-12 rounded-lg border border-[#d9d4c7] bg-[#fbfaf6] px-4 text-base font-medium outline-none transition focus:border-[#2f5f5a] focus:bg-white"
-                id="email"
-                name="Email"
-                required
-                type="email"
-              />
-            </label>
-            <label className="grid gap-2 text-sm font-semibold" htmlFor="phone">
-              Phone Number
-              <input
-                className="h-12 rounded-lg border border-[#d9d4c7] bg-[#fbfaf6] px-4 text-base font-medium outline-none transition focus:border-[#2f5f5a] focus:bg-white"
-                id="phone"
-                name="Phone Number"
-                type="tel"
-              />
-            </label>
-            <label
-              className="grid gap-2 text-sm font-semibold sm:col-span-2"
-              htmlFor="message"
-            >
-              Message
-              <textarea
-                className="min-h-36 resize-y rounded-lg border border-[#d9d4c7] bg-[#fbfaf6] px-4 py-3 text-base font-medium outline-none transition focus:border-[#2f5f5a] focus:bg-white"
-                id="message"
-                name="Message"
-                required
-              />
-            </label>
-            <button
-              className="h-12 rounded-full bg-[#2f5f5a] px-6 text-sm font-semibold text-white transition hover:bg-[#244b47] sm:col-span-2 sm:w-fit"
-              type="submit"
-            >
-              Send message
-            </button>
-          </form>
+          <ContactForm />
         </div>
       </section>
       <footer className="bg-[#151515] px-5 py-6 text-center text-sm font-medium text-white/70 sm:px-8">
