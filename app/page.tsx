@@ -1,3 +1,5 @@
+import { FooterYear } from "./FooterYear";
+
 const services = [
   {
     title: "Mobile apps",
@@ -273,7 +275,7 @@ export default function Home() {
         </div>
       </section>
       <footer className="bg-[#151515] px-5 py-6 text-center text-sm font-medium text-white/70 sm:px-8">
-        © 2026 RJA Tech LLC - All rights reserved
+        © <FooterYear /> RJA Tech LLC - All rights reserved
       </footer>
     </main>
   );
