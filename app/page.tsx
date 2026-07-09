@@ -187,7 +187,7 @@ export default function Home() {
       </section>
 
       <section className="bg-[#151515] px-5 py-16 text-white sm:px-8" id="contact">
-        <div className="mx-auto flex max-w-7xl flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
+        <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
           <div className="max-w-2xl">
             <p className="text-sm font-semibold uppercase tracking-wide text-[#f0a08c]">
               Contact RJA Tech LLC
@@ -195,13 +195,81 @@ export default function Home() {
             <h2 className="mt-3 text-3xl font-semibold sm:text-5xl">
               Tell us which platforms you want to launch on.
             </h2>
+            <p className="mt-5 text-base leading-7 text-white/72">
+              Share a few details about your app project and we will get back to
+              you with the next steps.
+            </p>
+            <a
+              className="mt-8 inline-flex h-12 w-fit items-center justify-center rounded-full bg-white px-6 text-sm font-semibold text-[#151515] transition hover:bg-[#f0a08c]"
+              href="mailto:support@rjatechllc.com"
+            >
+              support@rjatechllc.com
+            </a>
           </div>
-          <a
-            className="inline-flex h-12 w-fit items-center justify-center rounded-full bg-white px-6 text-sm font-semibold text-[#151515] transition hover:bg-[#f0a08c]"
-            href="mailto:support@rjatechllc.com"
+          <form
+            action="mailto:support@rjatechllc.com"
+            className="grid gap-4 rounded-lg border border-white/12 bg-white p-5 text-[#151515] shadow-[0_24px_70px_rgba(0,0,0,0.28)] sm:grid-cols-2 sm:p-6"
+            encType="text/plain"
+            method="post"
           >
-            support@rjatechllc.com
-          </a>
+            <label className="grid gap-2 text-sm font-semibold" htmlFor="first-name">
+              First Name
+              <input
+                className="h-12 rounded-lg border border-[#d9d4c7] bg-[#fbfaf6] px-4 text-base font-medium outline-none transition focus:border-[#2f5f5a] focus:bg-white"
+                id="first-name"
+                name="First Name"
+                required
+                type="text"
+              />
+            </label>
+            <label className="grid gap-2 text-sm font-semibold" htmlFor="last-name">
+              Last Name
+              <input
+                className="h-12 rounded-lg border border-[#d9d4c7] bg-[#fbfaf6] px-4 text-base font-medium outline-none transition focus:border-[#2f5f5a] focus:bg-white"
+                id="last-name"
+                name="Last Name"
+                required
+                type="text"
+              />
+            </label>
+            <label className="grid gap-2 text-sm font-semibold" htmlFor="phone">
+              Phone Number
+              <input
+                className="h-12 rounded-lg border border-[#d9d4c7] bg-[#fbfaf6] px-4 text-base font-medium outline-none transition focus:border-[#2f5f5a] focus:bg-white"
+                id="phone"
+                name="Phone Number"
+                type="tel"
+              />
+            </label>
+            <label className="grid gap-2 text-sm font-semibold" htmlFor="email">
+              Email
+              <input
+                className="h-12 rounded-lg border border-[#d9d4c7] bg-[#fbfaf6] px-4 text-base font-medium outline-none transition focus:border-[#2f5f5a] focus:bg-white"
+                id="email"
+                name="Email"
+                required
+                type="email"
+              />
+            </label>
+            <label
+              className="grid gap-2 text-sm font-semibold sm:col-span-2"
+              htmlFor="message"
+            >
+              Message
+              <textarea
+                className="min-h-36 resize-y rounded-lg border border-[#d9d4c7] bg-[#fbfaf6] px-4 py-3 text-base font-medium outline-none transition focus:border-[#2f5f5a] focus:bg-white"
+                id="message"
+                name="Message"
+                required
+              />
+            </label>
+            <button
+              className="h-12 rounded-full bg-[#2f5f5a] px-6 text-sm font-semibold text-white transition hover:bg-[#244b47] sm:col-span-2 sm:w-fit"
+              type="submit"
+            >
+              Send message
+            </button>
+          </form>
         </div>
       </section>
     </main>
