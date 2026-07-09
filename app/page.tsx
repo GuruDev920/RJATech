@@ -40,7 +40,107 @@ const steps = [
   },
 ];
 
-const platforms = ["Android", "Apple", "Samsung", "LG", "Roku", "Windows"];
+const platforms = [
+  {
+    name: "Android",
+    icon: (
+      <svg aria-hidden="true" viewBox="0 0 24 24">
+        <path
+          d="M7.2 9.2h9.6v7.1c0 1.4-1.1 2.5-2.5 2.5H9.7c-1.4 0-2.5-1.1-2.5-2.5V9.2Z"
+          fill="currentColor"
+        />
+        <path
+          d="M8.6 8.1 6.9 5.2M15.4 8.1l1.7-2.9"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeWidth="1.7"
+        />
+        <circle cx="9.8" cy="12.2" r=".7" fill="#f8f7f2" />
+        <circle cx="14.2" cy="12.2" r=".7" fill="#f8f7f2" />
+      </svg>
+    ),
+  },
+  {
+    name: "Apple",
+    icon: (
+      <svg aria-hidden="true" viewBox="0 0 24 24">
+        <path
+          d="M16.8 12.7c0-2 1.5-3 1.6-3.1-.9-1.3-2.3-1.5-2.8-1.5-1.2-.1-2.3.7-2.9.7-.6 0-1.5-.7-2.5-.7-1.3 0-2.5.8-3.2 1.9-1.4 2.4-.4 6 1 8 .7 1 1.5 2.1 2.6 2.1 1 0 1.4-.7 2.7-.7 1.2 0 1.6.7 2.7.7s1.8-1 2.5-2c.8-1.1 1.1-2.2 1.1-2.3 0 0-2.8-1.1-2.8-3.1Z"
+          fill="currentColor"
+        />
+        <path
+          d="M14.9 6.8c.6-.7 1-1.7.9-2.7-.9 0-1.9.6-2.5 1.3-.6.7-1 1.6-.9 2.6 1 0 1.9-.5 2.5-1.2Z"
+          fill="currentColor"
+        />
+      </svg>
+    ),
+  },
+  {
+    name: "Samsung",
+    icon: (
+      <svg aria-hidden="true" viewBox="0 0 24 24">
+        <ellipse cx="12" cy="12" fill="currentColor" rx="10" ry="6.4" />
+        <text
+          fill="#f8f7f2"
+          fontFamily="Arial, Helvetica, sans-serif"
+          fontSize="7"
+          fontWeight="700"
+          x="5.1"
+          y="14.4"
+        >
+          S
+        </text>
+      </svg>
+    ),
+  },
+  {
+    name: "LG",
+    icon: (
+      <svg aria-hidden="true" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" fill="currentColor" r="9" />
+        <circle cx="9.8" cy="9.6" fill="#f8f7f2" r="1.2" />
+        <path
+          d="M12 6.6v7h4.1"
+          stroke="#f8f7f2"
+          strokeLinecap="round"
+          strokeWidth="1.7"
+        />
+        <path
+          d="M8.7 15.2c1.2 1.3 3.5 2.2 5.8.8"
+          stroke="#f8f7f2"
+          strokeLinecap="round"
+          strokeWidth="1.4"
+        />
+      </svg>
+    ),
+  },
+  {
+    name: "Roku",
+    icon: (
+      <svg aria-hidden="true" viewBox="0 0 24 24">
+        <rect fill="currentColor" height="14" rx="3" width="20" x="2" y="5" />
+        <text
+          fill="#f8f7f2"
+          fontFamily="Arial, Helvetica, sans-serif"
+          fontSize="7"
+          fontWeight="700"
+          x="5"
+          y="14.5"
+        >
+          R
+        </text>
+      </svg>
+    ),
+  },
+  {
+    name: "Windows",
+    icon: (
+      <svg aria-hidden="true" viewBox="0 0 24 24">
+        <path d="M3 5.1 10.7 4v7.4H3V5.1ZM12.1 3.8 21 2.6v8.8h-8.9V3.8ZM3 12.7h7.7v7.4L3 19v-6.3ZM12.1 12.7H21v8.7l-8.9-1.2v-7.5Z" fill="currentColor" />
+      </svg>
+    ),
+  },
+];
 
 export default function Home() {
   return (
@@ -91,10 +191,11 @@ export default function Home() {
           <div className="mt-6 flex max-w-xl flex-wrap gap-2">
             {platforms.map((platform) => (
               <span
-                className="rounded-full border border-[#d9d4c7] bg-white/75 px-3 py-1.5 text-sm font-semibold text-[#2f5f5a]"
-                key={platform}
+                className="inline-flex items-center gap-1.5 rounded-full border border-[#d9d4c7] bg-white/75 px-3 py-1.5 text-sm font-semibold text-[#2f5f5a]"
+                key={platform.name}
               >
-                {platform}
+                <span className="h-4 w-4 shrink-0">{platform.icon}</span>
+                {platform.name}
               </span>
             ))}
           </div>
