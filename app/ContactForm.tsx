@@ -1,38 +1,63 @@
 "use client";
 
 import type { FormEvent } from "react";
+import { useState } from "react";
 
-const supportEmail = "support@rjatechllc.com";
+const firebaseConfig = {
+  apiKey: "AIzaSyAgOz0-tPY7Y2q-HB8uMFDxsK6sY7nyAsg",
+  projectId: "smart-tech-llc-44679",
+};
+
+type SubmitStatus = "idle" | "sending" | "success" | "error";
 
 export function ContactForm() {
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+  const [status, setStatus] = useState<SubmitStatus>("idle");
+
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
-    const formData = new FormData(event.currentTarget);
+    const form = event.currentTarget;
+    const formData = new FormData(form);
     const firstName = String(formData.get("First Name") ?? "").trim();
     const lastName = String(formData.get("Last Name") ?? "").trim();
     const email = String(formData.get("Email") ?? "").trim();
     const phone = String(formData.get("Phone Number") ?? "").trim();
     const message = String(formData.get("Message") ?? "").trim();
 
-    const body = [
-      `First Name: ${firstName}`,
-      `Last Name: ${lastName}`,
-      `Email: ${email}`,
-      `Phone Number: ${phone || "Not provided"}`,
-      "",
-      "Message:",
-      message,
-    ].join("\n");
+    setStatus("sending");
 
-    const gmailUrl = new URL("https://mail.google.com/mail/");
-    gmailUrl.searchParams.set("view", "cm");
-    gmailUrl.searchParams.set("fs", "1");
-    gmailUrl.searchParams.set("to", supportEmail);
-    gmailUrl.searchParams.set("su", "App Project Inquiry");
-    gmailUrl.searchParams.set("body", body);
+    try {
+      const firestoreUrl = new URL(
+        `https://firestore.googleapis.com/v1/projects/${firebaseConfig.projectId}/databases/(default)/documents/contact_messages`,
+      );
+      firestoreUrl.searchParams.set("key", firebaseConfig.apiKey);
 
-    window.open(gmailUrl.toString(), "_blank", "noopener,noreferrer");
+      const response = await fetch(firestoreUrl.toString(), {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          fields: {
+            first_name: { stringValue: firstName },
+            last_name: { stringValue: lastName },
+            email: { stringValue: email },
+            phone_number: { stringValue: phone },
+            message: { stringValue: message },
+            created_at: { timestampValue: new Date().toISOString() },
+          },
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Firestore save failed");
+      }
+
+      form.reset();
+      setStatus("success");
+    } catch {
+      setStatus("error");
+    }
   }
 
   return (
@@ -92,11 +117,22 @@ export function ContactForm() {
         />
       </label>
       <button
-        className="h-12 rounded-full bg-[#2f5f5a] px-6 text-sm font-semibold text-white transition hover:bg-[#244b47] sm:col-span-2 sm:w-fit"
+        className="h-12 rounded-full bg-[#2f5f5a] px-6 text-sm font-semibold text-white transition hover:bg-[#244b47] disabled:cursor-not-allowed disabled:bg-[#8aa5a1] sm:col-span-2 sm:w-fit"
+        disabled={status === "sending"}
         type="submit"
       >
-        Send message
+        {status === "sending" ? "Sending..." : "Send message"}
       </button>
+      {status === "success" ? (
+        <p className="text-sm font-semibold text-[#2f5f5a] sm:col-span-2">
+          Message saved. We will get back to you soon.
+        </p>
+      ) : null}
+      {status === "error" ? (
+        <p className="text-sm font-semibold text-[#d5674b] sm:col-span-2">
+          Message could not be saved. Please try again.
+        </p>
+      ) : null}
     </form>
   );
 }
