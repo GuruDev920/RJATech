@@ -43,6 +43,7 @@ const steps = [
 const platforms = [
   {
     name: "Android",
+    colorClassName: "text-[#3DDC84]",
     icon: (
       <svg aria-hidden="true" viewBox="0 0 24 24">
         <path
@@ -62,6 +63,7 @@ const platforms = [
   },
   {
     name: "Apple",
+    colorClassName: "text-[#151515]",
     icon: (
       <svg aria-hidden="true" viewBox="0 0 24 24">
         <path
@@ -77,6 +79,7 @@ const platforms = [
   },
   {
     name: "Samsung",
+    colorClassName: "text-[#1428A0]",
     iconClassName: "h-4 w-12",
     icon: (
       <svg aria-hidden="true" viewBox="0 0 72 24">
@@ -98,6 +101,7 @@ const platforms = [
   },
   {
     name: "LG",
+    colorClassName: "text-[#A50034]",
     icon: (
       <svg aria-hidden="true" viewBox="0 0 24 24">
         <circle cx="12" cy="12" fill="currentColor" r="9" />
@@ -119,6 +123,7 @@ const platforms = [
   },
   {
     name: "Roku",
+    colorClassName: "text-[#6F1AB1]",
     iconClassName: "h-4 w-10",
     icon: (
       <svg aria-hidden="true" viewBox="0 0 60 24">
@@ -139,6 +144,7 @@ const platforms = [
   },
   {
     name: "Windows",
+    colorClassName: "text-[#0078D4]",
     icon: (
       <svg aria-hidden="true" viewBox="0 0 24 24">
         <path d="M3 5.1 10.7 4v7.4H3V5.1ZM12.1 3.8 21 2.6v8.8h-8.9V3.8ZM3 12.7h7.7v7.4L3 19v-6.3ZM12.1 12.7H21v8.7l-8.9-1.2v-7.5Z" fill="currentColor" />
@@ -196,7 +202,7 @@ export default function Home() {
           <div className="mt-6 flex max-w-xl flex-wrap gap-2">
             {platforms.map((platform) => (
               <span
-                className="inline-flex items-center gap-1.5 rounded-full border border-[#d9d4c7] bg-white/75 px-3 py-1.5 text-sm font-semibold text-[#2f5f5a]"
+                className={`inline-flex items-center gap-1.5 rounded-full border border-[#d9d4c7] bg-white/75 px-3 py-1.5 text-sm font-semibold ${platform.colorClassName}`}
                 key={platform.name}
               >
                 <span className={`${platform.iconClassName ?? "h-4 w-4"} shrink-0`}>
