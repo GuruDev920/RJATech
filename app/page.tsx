@@ -41,6 +41,29 @@ const steps = [
   },
 ];
 
+const reasons = [
+  {
+    icon: "🔒",
+    title: "Reliable & Secure",
+    body: "We use modern development practices to ensure our apps are safe, private, and trustworthy.",
+  },
+  {
+    icon: "⚡",
+    title: "Fast & Lightweight",
+    body: "Our apps are designed to be efficient, lightweight, and optimized for smooth performance.",
+  },
+  {
+    icon: "🌍",
+    title: "Global Reach",
+    body: "Serving customers worldwide with easy downloads and ongoing updates to improve experience.",
+  },
+  {
+    icon: "📞",
+    title: "Dedicated Support",
+    body: "We’re here to help. Reach us anytime for assistance or business inquiries.",
+  },
+];
+
 const platforms = [
   {
     name: "Android",
@@ -300,6 +323,35 @@ export default function Home() {
               </p>
             </article>
           ))}
+        </div>
+      </section>
+
+      <section className="border-y border-[#e2ddcf] bg-white px-5 py-16 sm:px-8">
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-10 max-w-2xl">
+            <p className="text-sm font-semibold uppercase tracking-wide text-[#d5674b]">
+              Why choose us
+            </p>
+            <h2 className="mt-3 text-3xl font-semibold sm:text-4xl">
+              Why Choose RJA Tech LLC?
+            </h2>
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {reasons.map((reason) => (
+              <article
+                className="rounded-lg border border-[#e2ddcf] bg-[#fbfaf6] p-5"
+                key={reason.title}
+              >
+                <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-full bg-white text-xl shadow-sm">
+                  <span aria-hidden="true">{reason.icon}</span>
+                </div>
+                <h3 className="text-lg font-semibold">{reason.title}</h3>
+                <p className="mt-3 text-sm leading-6 text-[#55534d]">
+                  {reason.body}
+                </p>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 
